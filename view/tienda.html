@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!--  Iconos -->
+       <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+       <!-- CSS -->
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="../css/styles.css">
+        <title>Playeras Obligame perro</title>
+    </head>
+<body>
+     <!-- Scroll arriba -->
+     <a href="" class="scrolltop " id="scroll-top">
+        <i class='bx bx-chevron-up scroll-header scrolltop__icon'></i>
+    </a>
+
+
+   <!--  HEADER -->
+
+   <header class="l-header" id="header">
+
+    <nav class="nav bd-container">
+
+        <a href="index.html" class="nav__logo"><img src="../img/obperroo.png" alt=""></a>
+
+        <!-- MENU nav-menu -->
+        <div class="nav__menu " id="nav-menu">
+            <ul class="nav__list">
+                <!-- AQUI ESTA NAV__LINK -->
+                <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                <!-- <li class="nav__item"><a href="#about" class="nav__link">Nosotros</a></li> -->
+                <li class="nav__item"><a href="tienda.html" class="nav__link active-link">Tienda</a></li>
+                <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contactanos</a></li> -->
+
+                <button id = "checkout" class="button-checkout" onclick="pay()" >Pagar</button>
+
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </ul>
+        </div>
+
+        <!-- ICONO HAMBURGUESA nav-toggle-->
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+
+    </nav>
+
+   </header>
+
+   <section class="tienda section bd-container" id="tienda">
+    <span class="section-subtitle">Conoce</span>
+    <h2 class="section-title">Nuestros Productos</h2>
+    <div class="botones_tienda bd-container">
+        <a href="#" class="button bts">Playeras bts</a>
+        <a href="#" class="button memes">Playeras memes</a>
+        <a href="#" class="button todas">Todas las playeras</a>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////// -->
+    <div class="tienda__container bd-grid">
+        <div class="tienda__content">
+            <img src="../img/p2.jpg" alt="" class="tienda__img">
+            <h3 class="tienda__nombre"> Playera Oscura</h3>
+            <span class="tienda__detail">Hecha de algodon</span>
+            <span class="tienda_precio">$299 MXN</span>
+            <!-- <a href="" class="button menu__button" >
+                <i class='bx bx-cart-alt' ></i>
+            </a> -->
+            <button class="button menu__button" onclick="add('p2',299)">
+                <i class='bx bx-cart-alt' ></i>
+            </button>
+        </div>
+        <div class="tienda__content">
+            <img src="../img/p3.jpg" alt="" class="tienda__img">
+            <h3 class="tienda__nombre"> Playera Blanca</h3>
+            <span class="tienda__detail">Hecha de algodon</span>
+            <span class="tienda_precio">$199 MXN</span>
+            <!-- <a href="#" class="button menu__button">
+                <i class='bx bx-cart-alt' ></i>
+            </a> -->
+            <button class="button menu__button" onclick="add('p3',199)">
+                <i class='bx bx-cart-alt' ></i>
+            </button>
+        </div>
+        <div class="tienda__content">
+            <img src="../img/p4.jpg" alt="" class="tienda__img">
+            <h3 class="tienda__nombre"> Playera Negra</h3>
+            <span class="tienda__detail">Hecha de algodon</span>
+            <span class="tienda_precio">$399 MXN</span>
+            <!-- <a href="#" class="button menu__button">
+                <i class='bx bx-cart-alt' ></i>
+            </a> -->
+            <button class="button menu__button" onclick="add('p4',399)">
+                <i class='bx bx-cart-alt' ></i>
+            </button>
+        </div>
+        <div class="tienda__content">
+            <img src="../img/p5.jpg" alt="" class="tienda__img">
+            <h3 class="tienda__nombre"> Playera Roja</h3>
+            <span class="tienda__detail">Hecha de algodon</span>
+            <span class="tienda_precio">$499 MXN</span>
+            <!-- <a href="#" class="button menu__button">
+                <i class='bx bx-cart-alt' ></i>
+            </a> -->
+            <button class="button menu__button" onclick="add('p5',499)">
+                <i class='bx bx-cart-alt' ></i>
+            </button>
+        </div>
+
+        <div class="tienda__content">
+            <img src="../img/pa7.jpg" alt="" class="tienda__img">
+            <h3 class="tienda__nombre"> Playera Roja</h3>
+            <span class="tienda__detail">Hecha de algodon</span>
+            <span class="tienda_precio">$499 MXN</span>
+            <!-- <a href="#" class="button menu__button">
+                <i class='bx bx-cart-alt' ></i>
+            </a> -->
+            <button class="button menu__button" onclick="add('p5',499)">
+                <i class='bx bx-cart-alt' ></i>
+            </button>
+        </div>
+        <div class="tienda__content">
+            <img src="../img/p4.jpg" alt="" class="tienda__img">
+            <h3 class="tienda__nombre"> Playera Negra</h3>
+            <span class="tienda__detail">Hecha de algodon</span>
+            <span class="tienda_precio">$399 MXN</span>
+            <!-- <a href="#" class="button menu__button">
+                <i class='bx bx-cart-alt' ></i>
+            </a> -->
+            <button class="button menu__button" onclick="add('p4',399)">
+                <i class='bx bx-cart-alt' ></i>
+            </button>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////// -->
+    <div class="tienda__container2 bd-grid active">
+        <div class="tienda__content">
+            <img src="../img/c1.jpeg" alt="" class="tienda__img">
+            <h3 class="tienda__nombre"> Playera Roja</h3>
+            <span class="tienda__detail">Hecha de algodon</span>
+            <span class="tienda_precio">$499 MXN</span>
+            <!-- <a href="#" class="button menu__button">
+                <i class='bx bx-cart-alt' ></i>
+            </a> -->
+            <button class="button menu__button" onclick="add('p5',499)">
+                <i class='bx bx-cart-alt' ></i>
+            </button>
+        </div>
+        <div class="tienda__content">
+            <img src="../img/c2.jpeg" alt="" class="tienda__img">
+            <h3 class="tienda__nombre"> Playera Roja</h3>
+            <span class="tienda__detail">Hecha de algodon</span>
+            <span class="tienda_precio">$499 MXN</span>
+            <!-- <a href="#" class="button menu__button">
+                <i class='bx bx-cart-alt' ></i>
+            </a> -->
+            <button class="button menu__button" onclick="add('p5',499)">
+                <i class='bx bx-cart-alt' ></i>
+            </button>
+        </div>
+        <div class="tienda__content">
+            <img src="../img/c3.jpeg" alt="" class="tienda__img">
+            <h3 class="tienda__nombre"> Playera Roja</h3>
+            <span class="tienda__detail">Hecha de algodon</span>
+            <span class="tienda_precio">$499 MXN</span>
+            <!-- <a href="#" class="button menu__button">
+                <i class='bx bx-cart-alt' ></i>
+            </a> -->
+            <button class="button menu__button" onclick="add('p5',499)">
+                <i class='bx bx-cart-alt' ></i>
+            </button>
+        </div>
+        <div class="tienda__content">
+            <img src="../img/c4.jpeg" alt="" class="tienda__img">
+            <h3 class="tienda__nombre"> Playera Roja</h3>
+            <span class="tienda__detail">Hecha de algodon</span>
+            <span class="tienda_precio">$499 MXN</span>
+            <!-- <a href="#" class="button menu__button">
+                <i class='bx bx-cart-alt' ></i>
+            </a> -->
+            <button class="button menu__button" onclick="add('p5',499)">
+                <i class='bx bx-cart-alt' ></i>
+            </button>
+        </div>
+        <div class="tienda__content">
+            <img src="../img/pa7.jpg" alt="" class="tienda__img">
+            <h3 class="tienda__nombre"> Playera Roja</h3>
+            <span class="tienda__detail">Hecha de algodon</span>
+            <span class="tienda_precio">$499 MXN</span>
+            <!-- <a href="#" class="button menu__button">
+                <i class='bx bx-cart-alt' ></i>
+            </a> -->
+            <button class="button menu__button" onclick="add('p5',499)">
+                <i class='bx bx-cart-alt' ></i>
+            </button>
+        </div>
+        <div class="tienda__content">
+            <img src="../img/pa7.jpg" alt="" class="tienda__img">
+            <h3 class="tienda__nombre"> Playera Roja</h3>
+            <span class="tienda__detail">Hecha de algodon</span>
+            <span class="tienda_precio">$499 MXN</span>
+            <!-- <a href="#" class="button menu__button">
+                <i class='bx bx-cart-alt' ></i>
+            </a> -->
+            <button class="button menu__button" onclick="add('p5',499)">
+                <i class='bx bx-cart-alt' ></i>
+            </button>
+        </div>
+        <div class="tienda__content">
+            <img src="../img/pa7.jpg" alt="" class="tienda__img">
+            <h3 class="tienda__nombre"> Playera Roja</h3>
+            <span class="tienda__detail">Hecha de algodon</span>
+            <span class="tienda_precio">$499 MXN</span>
+            <!-- <a href="#" class="button menu__button">
+                <i class='bx bx-cart-alt' ></i>
+            </a> -->
+            <button class="button menu__button" onclick="add('p5',499)">
+                <i class='bx bx-cart-alt' ></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<footer class="footer section bd-container">
+    <div class="footer__container bd-grid">
+        <div class="footer__content">
+            <a href="#" class="footer__logo">Obigame perro</a>
+            <span class="footer__description">Negocio</span>
+
+            <div>
+                <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </div>
+        <div class="footer__content">
+            <h3 class="footer__title">Servicios</h3>
+            <ul>
+                <li><a href="#" class="footer__link">Delivery</a></li>
+                <li><a href="#" class="footer__link">Economico</a></li>
+                <li><a href="#" class="footer__link">Seguro</a></li>
+                <li><a href="#" class="footer__link">Compra ya</a></li>
+            </ul>
+        </div>
+        <div class="footer__content">
+            <h3 class="footer__title">Informacion</h3>
+            <ul>
+                <li><a href="#" class="footer__link">Contactanos</a></li>
+                <li><a href="#" class="footer__link">política de privacidad</a></li>
+                <li><a href="#" class="footer__link">Terminos y condiciones</a></li>
+            </ul>
+        </div>
+        <div class="footer__content">
+            <h3 class="footer__title">Direccion</h3>
+            <ul>
+                <li>Mexico - Queretaro</li>
+                <li>999-888-777</li>
+                <li>playerasobligameperro@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="footer__copy">&#169; 2021 ObligamePerro. Todos los derechos reservados.</p>
+</footer>
+
+<!-- JS -->
+<script src="../js/app.js"></script>
+ <!--  SCROLL -->
+ <script src="https://unpkg.com/scrollreveal"></script>
+ 
+</body>
+</html>

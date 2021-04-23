@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--  Iconos -->
-   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-   <!-- CSS -->
-   <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--  Iconos -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Playeras Obligame perro</title>
 </head>
+
 <body>
     <!-- Scroll arriba -->
     <a href="" class="scrolltop " id="scroll-top">
@@ -19,41 +22,83 @@
     </a>
 
 
-   <!--  HEADER -->
+    <!--  HEADER -->
 
-   <header class="l-header" id="header">
+    <header class="l-header" id="header">
 
-    <nav class="nav bd-container">
+        <nav class="nav bd-container">
 
-        <a href="../img/obperroo.png" class="nav__logo"><img src="../img/obperroo.png" alt=""></a>
+            <a href="#home" class="nav__logo"><img src="../img/obperroo.png" alt=""></a>
 
-        <!-- MENU nav-menu -->
-        <div class="nav__menu " id="nav-menu">
-            <ul class="nav__list">
-                <!-- AQUI ESTA NAV__LINK -->
-                <li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">Nosotros</a></li>
-                <li class="nav__item"><a href="#tienda" class="nav__link">Tienda</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Contactanos</a></li>
+            <!-- MENU nav-menu -->
+            <div class="nav__menu " id="nav-menu">
+                <ul class="nav__list">
+                    <!-- AQUI ESTA NAV__LINK -->
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contactanos</a></li>
+                    <li class="nav__item"><a href="tienda.html" class="nav__link">Tienda</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Clientes Premiuns</a></li>
 
-                <button id = "checkout" class="button-checkout" onclick="pay()" >Pagar</button>
+                    <!-- <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button> -->
 
-                <i class='bx bx-moon change-theme' id="theme-button"></i>
-            </ul>
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+                </ul>
+            </div>
+            <!--  -->
+
+            <!-- ICONO HAMBURGUESA nav-toggle-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- =================SLIDER================= -->
+    <div class="contenedor ">
+
+        <div class="carousel">
+
+            <div class="carousel__contenedor">
+
+                <div class="carousel__lista">
+
+                    <div class="carousel__elemento">
+                        <img src="../img/1.jpg" alt="">
+                    </div>
+
+                    <div class="carousel__elemento">
+                        <img src="../img/3.jpg" alt="">
+                    </div>
+
+                    <div class="carousel__elemento">
+                        <img src="../img/4.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="direcciones">
+                    <button aria-label="Anterior" class="carousel__anterior">
+                        <i class='bx bxs-chevron-left'></i>
+                    </button>
+
+                    <button aria-label="Siguiente" class="carousel__siguiente">
+                        <i class='bx bxs-chevron-right'></i>
+                    </button>
+                </div>
+            </div>
+
+            <div role="tablist" class="carousel__indicadores"></div>
+
         </div>
 
-        <!-- ICONO HAMBURGUESA nav-toggle-->
-        <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-menu'></i>
-        </div>
+    </div>
 
-    </nav>
+    <!-- =================INICIO================= -->
 
-   </header>
-
-<!-- =================INICIO================= -->
-
-   <main class="l-main">
+    <!-- <main class="l-main">
         <section class="home" id="home">
             <div class="home__container bd-container bd-grid">
                 <div class="home__data">
@@ -70,23 +115,24 @@
                 <img src="../img/fondo-playeras.jpg" alt="" class="home__img">
             </div>
         </section>
-   </main>
+    </main> -->
 
-   <!-- =================NOSOTROS================= -->
+    <!-- =================NOSOTROS================= -->
 
-   <section class="about section bd-container" id="about">
-       <div class="about__container bd-grid">
-           <div class="about__data">
-               <span class="section-subtitle about__initial">Nosotros</span>
-               <h2 class="section-title">Tenemos<br> lo que te gusta</h2>
-               <P class="about_description">Somos unos emprendedores, con estudios e indumentaria. Creamos una marca una que represente a los jovenes.</P>
-               <a href="#" class="button">Exploranos</a>
-           </div>
-           <img src="../img/p1.jpg" alt="" class="about__img">
-       </div>
-   </section>
+    <section class="about section bd-container" id="about">
+        <div class="about__container bd-grid">
+            <div class="about__data">
+                <span class="section-subtitle about__initial">Nosotros</span>
+                <h2 class="section-title">Tenemos<br> lo que te gusta</h2>
+                <P class="about_description">Somos unos emprendedores, con estudios e indumentaria. Creamos una marca
+                    una que represente a los jovenes.</P>
+                <a href="#" class="button">Exploranos</a>
+            </div>
+            <img src="../img/p1.jpg" alt="" class="about__img">
+        </div>
+    </section>
 
-<!-- =================TIENDA================= -->
+    <!-- =================TIENDA================= -->
 
     <section class="tienda section bd-container" id="tienda">
         <span class="section-subtitle">Conoce</span>
@@ -102,7 +148,7 @@
                     <i class='bx bx-cart-alt' ></i>
                 </a> -->
                 <button class="button menu__button" onclick="add('p2',299)">
-                    <i class='bx bx-cart-alt' ></i>
+                    <i class='bx bx-cart-alt'></i>
                 </button>
             </div>
             <div class="tienda__content">
@@ -114,7 +160,7 @@
                     <i class='bx bx-cart-alt' ></i>
                 </a> -->
                 <button class="button menu__button" onclick="add('p3',199)">
-                    <i class='bx bx-cart-alt' ></i>
+                    <i class='bx bx-cart-alt'></i>
                 </button>
             </div>
             <div class="tienda__content">
@@ -126,7 +172,7 @@
                     <i class='bx bx-cart-alt' ></i>
                 </a> -->
                 <button class="button menu__button" onclick="add('p4',399)">
-                    <i class='bx bx-cart-alt' ></i>
+                    <i class='bx bx-cart-alt'></i>
                 </button>
             </div>
             <div class="tienda__content">
@@ -138,7 +184,7 @@
                     <i class='bx bx-cart-alt' ></i>
                 </a> -->
                 <button class="button menu__button" onclick="add('p5',499)">
-                    <i class='bx bx-cart-alt' ></i>
+                    <i class='bx bx-cart-alt'></i>
                 </button>
             </div>
 
@@ -151,7 +197,7 @@
                     <i class='bx bx-cart-alt' ></i>
                 </a> -->
                 <button class="button menu__button" onclick="add('p5',499)">
-                    <i class='bx bx-cart-alt' ></i>
+                    <i class='bx bx-cart-alt'></i>
                 </button>
             </div>
         </div>
@@ -163,13 +209,15 @@
             <div class="contact__data">
                 <span class="section-subtitle contact__initial">Hablemos</span>
                 <h2 class="section-title contact__initial">Contactanos</h2>
-                <p class="contact__description">Obligame perro crea diseños exclusivos, se toman pedido, cualquier duda, sugerencia o reclamo comuníquese con nosotros estamos para servirle Gracias</p>
+                <p class="contact__description">Obligame perro crea diseños exclusivos, se toman pedido, cualquier duda,
+                    sugerencia o reclamo comuníquese con nosotros estamos para servirle Gracias</p>
             </div>
             <div class="contact__button">
                 <a href="" class="button">Contactanos ahora</a>
             </div>
         </div>
     </section>
+
 
     <!-- =================FOOTER================= -->
 
@@ -180,9 +228,9 @@
                 <span class="footer__description">Negocio</span>
 
                 <div>
-                    <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
                 </div>
             </div>
             <div class="footer__content">
@@ -215,9 +263,13 @@
         <p class="footer__copy">&#169; 2021 ObligamePerro. Todos los derechos reservados.</p>
     </footer>
 
-   <!--  SCROLL -->
-   <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- JS -->
+
     <script src="../js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <!--  SCROLL -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <!-- JS -->
+    <script src="../js/slider.js"></script>
 </body>
+
 </html>
