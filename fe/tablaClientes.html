@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Iconos -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <title>Playeras Obligame perro</title>
+    
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('#datatable').DataTable();
+        } );
+
+    </script>
+</head>
+<body>
+    <!-- Scroll arriba -->
+    <a href="" class="scrolltop " id="scroll-top">
+        <i class='bx bx-chevron-up scroll-header scrolltop__icon'></i>
+    </a>
+
+
+    <!--  HEADER -->
+
+    <header class="l-header" id="header">
+
+        <nav class="nav bd-container">
+
+            <a href="#home" class="nav__logo"><img src="img/obperroo.png" alt=""></a>
+
+            <!-- MENU nav-menu -->
+            <div class="nav__menu " id="nav-menu">
+                <ul class="nav__list">
+                    <!-- AQUI ESTA NAV__LINK -->
+                    <li class="nav__item"><a href="index.html" class="nav__link ">Inicio</a></li>
+                    <li class="nav__item"><a href="tienda.html" class="nav__link">Tienda</a></li>
+                    <li class="nav__item"><a href="tablaClientes.html" class="nav__link active-link">Clientes </a></li>
+
+                    <!-- <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button> -->
+
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+                </ul>
+            </div>
+            <!--  -->
+
+            <!-- ICONO HAMBURGUESA nav-toggle-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="seccion__clientes">
+
+        <table id="datatable" class="table">
+            <thead>
+                <tr>
+                    <th>C.Nro</th>
+                    <th>Foto</th>
+                    <th>Nombre</th>
+                    <th>Social</th>
+                    <th>T.Playera</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="C.Nro">1</td>
+                    <td data-label="Foto"><img src="img/person1.jpg" alt="" width="120"></td>
+                    <td data-label="Nombre">Juan Luis Vargas</td>
+                    <td data-label="Social">Instragram</td>
+                    <td data-label="Payera">Premiun</td>
+                </tr>
+                <tr>
+                    <td data-label="C.Nro">2</td>
+                    <td data-label="Foto"><img src="img/person2.jpg" alt="" width="120"></td>
+                    <td data-label="Nombre">Julio Cesar Lopez</td>
+                    <td data-label="Social">Instragram</td>
+                    <td data-label="Payera">Premiun</td>
+                </tr>
+                <tr>
+                    <td data-label="C.Nro">3</td>
+                    <td data-label="Foto"><img src="img/person3.jpg" alt="" width="120"></td>
+                    <td data-label="Nombre">Stevan Julian Arriaga</td>
+                    <td data-label="Social">Instragram</td>
+                    <td data-label="Payera">Normal</td>
+                </tr>
+                <tr>
+                    <td data-label="C.Nro">4</td>
+                    <td data-label="Foto"><img src="img/person4.jpg" alt="" width="120"></td>
+                    <td data-label="Nombre">Cintia Juliana Oxenford</td>
+                    <td data-label="Social">Instragram</td>
+                    <td data-label="Payera">Normal</td>
+                </tr>
+                <tr>
+                    <td data-label="C.Nro">5</td>
+                    <td data-label="Foto"><img src="img/person5.jpg" alt="" width="120"></td>
+                    <td data-label="Nombre">Alonso Jhon Fernandez</td>
+                    <td data-label="Social">Instragram</td>
+                    <td data-label="Payera">Normal</td>
+                </tr>
+                <tr>
+                    <td data-label="C.Nro">6</td>
+                    <td data-label="Foto"><img src="img/person6.jpg" alt="" width="120"></td>
+                    <td data-label="Nombre">Alfonso Julio Ruiz</td>
+                    <td data-label="Social">Instragram</td>
+                    <td data-label="Payera">Premiun</td>
+                </tr>
+                <tr>
+                    <td data-label="C.Nro">7</td>
+                    <td data-label="Foto"><img src="img/person7.jpg" alt="" width="120"></td>
+                    <td data-label="Nombre">Maria Jose Rodriguez</td>
+                    <td data-label="Social">Instragram</td>
+                    <td data-label="Payera">Normal</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+
+    <!-- =================FOOTER================= -->
+
+    <footer class="footer section bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Obigame perro</a>
+                <span class="footer__description">Negocio</span>
+
+                <div>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Servicios</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Delivery</a></li>
+                    <li><a href="#" class="footer__link">Economico</a></li>
+                    <li><a href="#" class="footer__link">Seguro</a></li>
+                    <li><a href="#" class="footer__link">Compra ya</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Informacion</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Contactanos</a></li>
+                    <li><a href="#" class="footer__link">política de privacidad</a></li>
+                    <li><a href="#" class="footer__link">Terminos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Direccion</h3>
+                <ul>
+                    <li>Mexico - Queretaro</li>
+                    <li>999-888-777</li>
+                    <li>playerasobligameperro@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2021 ObligamePerro. Todos los derechos reservados.</p>
+    </footer>
+
+    <!--  SCROLL -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <!-- JS -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+    <script src="app.js"></script>
+    <!-- jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+</body>
+
+</html>
